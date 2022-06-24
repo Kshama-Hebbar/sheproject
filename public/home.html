@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHE</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="she.ico">
+    <script>
+        function onHealthCardClick() {
+            // console.log('this is health card');
+            window.open('health.html', '_blank');
+        }
+        function onLegarRightsCardClick() {
+            // console.log("this is legal right card");
+            window.open('legalRights.html', '_blank');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="contentBody">
+        <div class="content-container">
+            <img src="girl.jpg" alt="women" class="header_image">
+            <div class="heading">
+                <h1>SHE</h1>
+            </div>
+            <div class="content">
+                <div class="card" onclick="onHealthCardClick()">
+                    <img src="health.jpg" alt="health" class="card-img">
+                    <div class="container">
+                        <h3>HEALTH</h3>
+                    </div>
+                </div>
+                <div class="card" onclick="onLegarRightsCardClick()">
+                    <img src="legal tighs.jpg" alt="rights" class="card-img">
+                    <div class="container">
+                        <h3>LEGAL RIGHTS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </div>
+
+
+    <!-- <p >LEGAL RIGHTS</p> -->
+
+</body>
+
+</html>

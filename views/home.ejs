@@ -1,0 +1,78 @@
+<%-include("partials/header");-%>
+<h2>HOME</h2>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/home" style="font-weight: 700;
+  font-size: 24px;"> <span style="color: red;" >News </span>you shouldn't miss!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse searc-bar" id="navbarSupportedContent">
+
+      <form class="form-inline my-2 my-lg-0" action="/search" method="POST">
+          <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" style="width: 522px;"
+              aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+      </form>
+  </div>
+<div class="dropdown">
+  <button type="button" class="btn dropdown-toggle btn-outline-danger my-2 my-sm-0" data-toggle="dropdown">
+    Category
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/news/general">General</a>
+    <a class="dropdown-item" href="/news/health">Health</a>
+    <a class="dropdown-item" href="/news/technology">Technology</a>
+   
+  </div>
+</div>
+</nav>
+<link rel="stylesheet" href="/home.css">
+    <link rel="icon" href="she.ico">
+    <script>
+        function onHealthCardClick() {
+            // console.log('this is health card');
+            window.open('health.html', '_blank');
+        }
+        function onLegarRightsCardClick() {
+            // console.log("this is legal right card");
+            window.open('legalRights.html', '_blank');
+        }
+    </script>
+
+<body>
+  <div id="contentBody">
+      <div class="content-container">
+          <img src="girl.jpg" alt="women" class="header_image">
+          <div class="heading">
+              <h1>SHE</h1>
+          </div>
+          <div class="content">
+              <div class="card" onclick="onHealthCardClick()">
+                  <img src="health.jpg" alt="health" class="card-img">
+                  <div class="container">
+                      <h3>HEALTH</h3>
+                  </div>
+              </div>
+              <div class="card" onclick="onLegarRightsCardClick()">
+                  <img src="legal tighs.jpg" alt="rights" class="card-img">
+                  <div class="container">
+                      <h3>LEGAL RIGHTS</h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer">
+
+      </div>
+  </div>
+
+
+  <!-- <p >LEGAL RIGHTS</p> -->
+
+</body>
+<p><%=homecontent%></p>
+
+<%-include("partials/footer");-%>
