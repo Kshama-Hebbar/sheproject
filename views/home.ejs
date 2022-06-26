@@ -1,4 +1,10 @@
 <%-include("partials/header");-%>
+<head><style>
+    body {background-color: powderblue;}
+    /* h1   {color: blue;}
+    p    {color: red;} */
+    </style>
+    </head>
 <h2>HOME</h2>
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="/home" style="font-weight: 700;
@@ -17,15 +23,7 @@
       </form>
   </div>
 <div class="dropdown">
-  <button type="button" class="btn dropdown-toggle btn-outline-danger my-2 my-sm-0" data-toggle="dropdown">
-    Category
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="/news/general">General</a>
-    <a class="dropdown-item" href="/news/health">Health</a>
-    <a class="dropdown-item" href="/news/technology">Technology</a>
-   
-  </div>
+  
 </div>
 </nav>
 <link rel="stylesheet" href="/home.css">
@@ -33,11 +31,11 @@
     <script>
         function onHealthCardClick() {
             // console.log('this is health card');
-            window.open('health.html', '_blank');
+            window.open('health', '_blank');
         }
         function onLegarRightsCardClick() {
             // console.log("this is legal right card");
-            window.open('legalRights.html', '_blank');
+            window.open('legal', '_blank');
         }
     </script>
 
@@ -46,7 +44,7 @@
       <div class="content-container">
           <img src="girl.jpg" alt="women" class="header_image">
           <div class="heading">
-              <h1>SHE</h1>
+            
           </div>
           <div class="content">
               <div class="card" onclick="onHealthCardClick()">

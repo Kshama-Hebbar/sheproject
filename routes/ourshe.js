@@ -21,7 +21,7 @@ newsr.get('/',async(req,res)=>{
 })
 
 newsr.post('/search',async(req,res)=>{
-    const search=req.body.search
+    const search=req.body.search;
     //console.log(req.body.search)
 
 
@@ -46,7 +46,7 @@ newsr.post('/search',async(req,res)=>{
 newsr.get('/she/:category',async(req,res)=>{
     var category = req.params.category;
     try {
-        var url = 'http://newsapi.org/v2/top-headlines?country=in&category=' + category + '&apiKey=36f3e29b704f41339af8439dc1228334';
+        var url = 'http://newsapi.org/v2/top-headlines?country=in&category=women' + category + '&apiKey=36f3e29b704f41339af8439dc1228334';
 
         const news_get =await axios.get(url)
         res.render('category',{articles:news_get.data.articles})
